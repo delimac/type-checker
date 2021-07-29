@@ -1,0 +1,36 @@
+@import url("_base.css");
+
+@font-face {
+	font-family: "Faune";
+	font-weight: 400;
+	src: url(../fonts/faune-regular.woff2), url(../fonts/faune-regular.woff);
+}
+
+@font-face {
+	font-family: "Faune";
+	font-weight: 400;
+	font-style: italic;
+	src: url(../fonts/faune-italic.woff2), url(../fonts/faune-italic.woff);
+}
+
+@font-face {
+	font-family: "Faune";
+	font-weight: 700;
+	src: url(../fonts/faune-bold.woff2), url(../fonts/faune-bold.woff);
+}
+
+body {
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #ffffff;
+	color: #333333;
+	margin: 40px auto 40px auto;
+	width: 620px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
