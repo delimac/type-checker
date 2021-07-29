@@ -20,7 +20,7 @@
 }
 
 body {
-	font-family: Arial;
+	font-family: "Faune", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	
@@ -31,9 +31,33 @@ body {
 
 section.options {
 	background-color: #2a2a2a;
+	border-right: 1px solid rgba(255,255,255,0.1);
+	padding: 40px;
 	height: 100vh;
 	width: 280px;
 	position: fixed;
 	top: 0;
 	left: 0;
 }
+
+h1 {
+	font-size: 24px;
+}
+
+div.option {
+	margin: 10px 0 0 0;
+}
+
+label {
+	margin: 0 0 5px 0;
+	display: block;
+}
+
+input[type="text"] {
+	background-color: #575757;
+	border: 0;
+	color: #ffffff;
+	padding: 5px 7px;
+	width: 100%;
+}
+
