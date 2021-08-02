@@ -61,3 +61,13 @@ input[type="text"] {
 	width: 100%;
 }
 
+textarea.output {
+	background: none;
+	border: none;
+	color: #ffffff;
+	font-size: 64px;
+	outline: none;
+	resize: none;
+	height: 100vh;
+	width: 100%;
+}
