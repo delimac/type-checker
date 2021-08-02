@@ -45,7 +45,7 @@ h1 {
 }
 
 div.option {
-	margin: 10px 0 0 0;
+	margin: 20px 0 0 0;
 }
 
 label {
@@ -53,11 +53,20 @@ label {
 	display: block;
 }
 
+label span {
+	float: right;
+	font-style: italic;
+}
+
 input[type="text"] {
 	background-color: #575757;
 	border: 0;
 	color: #ffffff;
 	padding: 5px 7px;
+	width: 100%;
+}
+
+input[type="range"] {
 	width: 100%;
 }
 
