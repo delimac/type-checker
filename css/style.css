@@ -23,7 +23,6 @@ body {
 	font-family: "Faune", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	overflow: hidden;
 	
 	background-color: #2a2a2a;
 	color: #ffffff;
@@ -47,6 +46,12 @@ h1 {
 
 div.option {
 	margin: 20px 0 0 0;
+}
+
+div.option-checkbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 label {

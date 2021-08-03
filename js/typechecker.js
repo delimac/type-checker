@@ -6,6 +6,8 @@ const typesizeOutput = document.querySelector("span.typesize-output")
 const lineheightTag = document.querySelector(`input[name="lineheight"]`)
 const lineheightOutput = document.querySelector("span.lineheight-output")
 
+const italicTag = document.querySelector(`input[name="italic"]`)
+
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.value
 
@@ -37,4 +39,14 @@ lineheightTag.addEventListener("input", function () {
   // "this" here refers to lineheightTag
   outputTag.style.lineHeight = this.value
   lineheightOutput.innerHTML = this.value
+})
+
+// when user changes the italic checkbox, update font style to either
+// normal or italic
+italicTag.addEventListener("change", function() {
+  if (this.checked) {
+    outputTag.style.fontStyle = "italic"
+  } else {
+    outputTag.style.fontStyle = "normal"
+  }
 })
