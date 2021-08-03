@@ -10,6 +10,9 @@ const italicTag = document.querySelector(`input[name="italic"]`)
 
 const typefaceTag = document.querySelector(`select[name="typeface"]`)
 
+const fontweightTag = document.querySelector(`input[name="fontweight"]`)
+const fontweightOutput = document.querySelector("span.fontweight-output")
+
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.value
 
@@ -35,6 +38,12 @@ typesizeTag.addEventListener("input", function () {
   // "this" here refers to typesizeTag
   outputTag.style.fontSize = this.value + "px"
   typesizeOutput.innerHTML = this.value + "px"
+})
+
+fontweightTag.addEventListener("input", function() {
+  // "this" here refers to fontweightTag
+  outputTag.style.fontWeight = this.value
+  fontweightOutput.innerHTML = this.value
 })
 
 lineheightTag.addEventListener("input", function () {
