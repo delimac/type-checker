@@ -77,6 +77,10 @@ input[type="range"] {
 	width: 100%;
 }
 
+select {
+	width: 100%;
+}
+
 textarea.output {
 	background: none;
 	border: none;

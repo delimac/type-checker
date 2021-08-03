@@ -8,6 +8,8 @@ const lineheightOutput = document.querySelector("span.lineheight-output")
 
 const italicTag = document.querySelector(`input[name="italic"]`)
 
+const typefaceTag = document.querySelector(`select[name="typeface"]`)
+
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.value
 
@@ -49,4 +51,9 @@ italicTag.addEventListener("change", function() {
   } else {
     outputTag.style.fontStyle = "normal"
   }
+})
+
+// when user changes selected typeface, update font family
+typefaceTag.addEventListener("input", function () {
+  outputTag.style.fontFamily = this.value
 })
