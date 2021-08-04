@@ -21,7 +21,7 @@
 }
 
 body {
-	font-family: "Faune", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	
@@ -110,4 +110,19 @@ div.colors div {
 
 div.colors div.selected {
 	border: 2px solid #ffffff;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #575757;
+	border-radius: 50%;
+	outline: none;
+	transition: background-color 0.25s;
+	height: 16px;
+	width: 16px;;
+}
+
+input[type="checkbox"]:checked {
+	background-color: #ffffff;
 }
